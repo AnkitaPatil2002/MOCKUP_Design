@@ -115,7 +115,7 @@
                          <canvas id="myChart" width="0.7em" height="80px"></canvas>
                     </div>
                 
-                    <div class="income ">
+                    <div class="income column">
                         <h3>How do I compare to my peers?</h3>
                         <p class="light-grey">These requires correct goal achievement</p>
                         <div class="goal goal-2">
@@ -164,18 +164,64 @@
                     </div>
                    
                      <div class="col col-3">
+                           <div class="no-display income">
+                            <h3>How do I compare to my peers?</h3>
+                            <p class="light-grey">These requires correct goal achievement</p>
+                            
+                                <div class="mid-goal">
+                                    <span id="span-id">
+                                 <span class="span">
+                                <label for="">Age:</label>
+                                <select name="" id="">
+                                    <option value="" class="opt">under 30</option>
+                                    <option value="" class="opt">under 40</option>
+                                </select>
+                            </span>
+                                <span class="span">
+                                <label for="">Salary:</label>
+                                <select name="" id="">
+                                    <option value="" class="opt">k-20 k-30</option>
+                                    <option value="" class="opt">k-40-50</option>
+                                </select>
+                            </span>
+                            <span class="span">
+                                <label for="">Gender:</label>
+                                <select name="" id="">
+                                    <option value="" class="opt">Male</option>
+                                    <option value="" class="opt">Female</option>
+                                </select>
+                            </span>
+                        </span>
+                            <div class="percent">
+                                
+                               <span>
+                                <div class="pie" style="width: 80px;--p:60;--b:8px;--c:rgb(58, 212, 212);">78%</div>
+                                    <p id="pt-1">Average</p>
+                                </span>
+                                <span>
+                                    <div class="pie" style="width: 80px;--p:95;--b:8px;--c:rgb(58, 212, 212);">95%</div>
+                                    <p id="pt-1">Top</p>
+                                </span>
+                                <span>
+                                    <div class="pie" style="width: 80px;--p:59;--b:8px;--c:rgb(58, 212, 212);">59%</div>
+                                    <p id="pt-1">Ms</p>
+                                </span>
+                            </div>
+                        </div>
+                        </div>
+                      
                           <div class="rs1">
                                <h3>Retirement Strategy</h3>
                                 <div>
                                <h5>Employee Contribution</h5>
-                               <span>
+                               <span class="aline">
                                 <input type="range" name="" id="">
                                 <p>65%</p>
                                </span>
                             </div>
                                <div>
                                <h5>Employee Contribution</h5>
-                               <span>
+                               <span class="aline">
                                <input type="range" name="" id="">
                                <p>97</p>
                                </span>
@@ -183,16 +229,16 @@
                                <br>
                                <hr>
                                <br>
-                               <span>
+                               <span class="aline">
                                <h4>Employee contribution</h4>
                                <h4>9.8%</h4>
                                </span>
-                               <span>
+                               <span class="aline">
                                 <h4>Invest Rate</h4>
                                 <h4>9%</h4>
                                 </span>
                                
-                                <button class="btn">Update</button>
+                                <button class="btn update">Update</button>
                                  
                                 <p id="help-docs">View help Docs ></p>
                           </div>
@@ -219,7 +265,7 @@
                        data: {
                              labels: ['20', '25', '30', '35', '40', '45','60','65'],
                              datasets: [{
-                              label: 'Sales',
+                              label: 'Contribution Overtime',
                               data: [90,100 , 110, 150,200,210,220,290],
                               backgroundColor: 'cyan ',
                               borderColor: 'rgba(75, 192, 192, 1)',
