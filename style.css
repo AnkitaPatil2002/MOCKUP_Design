@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background:#F8F8F8;
+    
+    
+}
+.mid-container{
+   position:relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    
+    border-radius: 5px;
+    background: white;
+}
+.navbar{
+    position:absolute;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    
+}
+.navbar nav ul{
+    list-style: none;
+   
+}
+.navbar nav ul li{
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background 0.5s ;
+}
+.li-item:hover{
+    background: blue;
+    color:white;
+}
+.item-2{
+    margin-top: 20px;
+}
+.item-3{
+    margin-top: 300px;
+}
+.grid{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.col{
+    position: absolute;
+    
+    left: 50px;
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background:#F8F8F8;
+    
+}
+.col-2{
+    left: 350px;
+    width: 720px;
+    align-items: flex-start;
+    padding: 40px 50px; 
+    background: white;
+    
+}
+.income{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    
+}
+.income .goal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#border{
+    width: 150px;
+    background:lightgray;
+    border-radius: 10px;
+    height: 5px;
+}
+.goal-1 span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.border-2{
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border-radius: 50%;
+}
+.light-dark{
+    background: rgb(34, 106, 212);
+}
+.dark{
+    background: rgb(50, 166, 187);
+}
+.mid-goal{
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.mid-goal .span{
+    display: flex;
+    width: 130px;
+    background-color:#F8F8F8;
+    align-items: center;
+    padding: 2px;
+    border-radius: 2px;
+    justify-content: space-between;
+}
+.mid-goal .span select{
+    border: none;
+    background: transparent;
+}
+.percent{
+    flex-direction: row;
+   width: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+.percent span h3{
+    width: 80px;
+    height: 80px;
+   
+    border: 8px solid blue;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pt-1{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.png{
+    display: flex;
+    
+    width: 180px;
+    align-items: center;
+    justify-content: space-between;
+}
+.png img{
+    border-radius: 50%;
+    
+}
+.png span h1{
+    font-size: 25px;
+}
+.png span p{
+    font-size: 15px;
+}
+.png-2{
+    flex-direction: column;
+    align-items: flex-start;
+   
+    height: 35vh;
+    justify-content:space-between;
+}
+.png-3{
+    height: 30vh;
+    
+}
+.png-3 span p{
+    font-size: 12px;
+}
+.btn{
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #2033dd;
+    color: white;
+}
+.col-3{
+    left: 164vh;
+    justify-content: center;
+}
+.col-3 .rs1{
+    position: relative;
+    background: lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+    bottom: 80px;
+    gap: 6;
+}
+.rs1 span{
+    display: flex;
+    align-items: center;
+    
+    padding: 5px 0;
+}
+#help-docs{
+    margin: 10px 0;
+    text-align: center;
+    color: #2033dd;
+}
+#blue{
+    color: blue;
+}
+#staright-line{
+    width: 2px;
+    height: 80px;
+    background: blue;
+    margin-right: 20px;
+}
+.new{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+#p-text{
+    color: blue;
+}
+.light-grey{
+    color: grey;
+}
+
+@media (max-width: 768px) {
+    /* Add your styles for smaller screens here */
+    .mid-container {
+        flex-direction: column;
+    }
+    
+    .navbar {
+        display: none;
+    }
+    .grid{
+        position: static;
+        flex-direction: column;
+        
+        width: 100%;
+    }
+    .col {
+        position: static;
+        width: 100%;
+        left: 0px;
+        padding: 40px;
+       
+        background: white;
+    }
+    .png{
+        display: flex;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+        background-color: lightgrey;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .png img{
+        border-radius: 50%;
+        
+    }
+    .png span h1{
+        font-size: 25px;
+    }
+    .png span p{
+        font-size: 10px;
+    }
+    .png-2{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 30vh;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .png-3{
+        height: 30vh;
+        width: 100%;
+    }
+    .png-3 span p{
+        font-size: 15px;
+    }
+    .col-2 {
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+        flex-direction: row;
+      
+    }
+    .income .goal{
+       
+        flex-wrap: wrap;
+    }
+    .mobile-screen{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+    .goal-h1{
+        font-size: 22px;
+        
+    }
+    
+    .col-3 {
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+    .new{
+        display: none;
+    }
+    .col-3 .rs1{
+        position: relative;
+        background: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        bottom: 80px;
+        gap: 6;
+    }
+    .chiku{
+        display: none;
+    }
+    .piku{
+        display: block;
+    }
+}
+.pie {
+    --w:150px;
+    
+    width: var(--w);
+    aspect-ratio: 1;
+    position: relative;
+    display: inline-grid;
+    place-content: center;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  .pie:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+ 
